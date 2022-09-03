@@ -1,15 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import "./App.css";
+import Portal from './modules/Portal';
+// import Home from './modules/Home';
+import Navbar from "./modules/Navbar";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <h1 className="heading-main">Hostel Complaint Portal</h1>
-      <form className="form-main">
-        
-      </form>
+    <div>
+      <Navbar page="Home"/>
+      <Portal />
     </div>
   );
 }
-
-export default App;
